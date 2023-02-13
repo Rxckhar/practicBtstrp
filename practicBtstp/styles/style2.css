@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+  
+}
+.header{
+    margin-top: 25px;
+   
+}
+.logo{
+    margin-top: 10px;
+}
+.slogan{
+    margin-top: 0;
+    font-size: 24px;
+    color: #2c3e50;
+    line-height: 100%;
+}
+
+.bucket-box{
+
+}
+.bucket-text{
+    border: 1px solid #ecf0f1;
+    color: #3498db;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 46px;
+    text-align: center;
+    text-decoration: none;
+}
+.bucket-img{
+    width: auto;
+    height: auto;
+    padding-right: 15px;
+}
+.contacts{
+    color: #466380;
+}
+.contacts::first-line{
+    padding-bottom: 3px;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+}
+.contacts a{
+    color: #3498db;
+}
+.header-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    background: #2980b9;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header .col-lg-4 {
+    margin: 0;
+    padding: 0;
+}
+.header .col-md-4 {
+    margin: 0;
+    padding: 0;
+}
+.block .col-lg-9{
+    padding: 0;
+}
+.block .col-md-9{
+    padding: 0;
+}
+ul{
+    display: flex;
+}
+.item{
+    cursor: pointer;
+    color: white;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 15px;
+    line-height: 52px;
+}
+.item:hover{
+    background-color: #3498db;
+}
+.body{
+    background-color: #ecf0f1;
+}
+.search{
+    margin-top: 10px;
+}
+.search-name{
+    width: 132px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.search-input{
+    padding: 0 15px;
+    font-size: 18px;
+}
+fieldset input{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    height: 42px;
+    background-color: #d64838;
+}
+.search-input:focus{
+    outline: none;
+    background-color: white;
+}
+input::placeholder{
+    color: white;
+}
+input:focus::placeholder{
+    color: #2c3e50;
+}
+.body fieldset{
+    display: flex;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border: 0;
+}
+.block .search-name, .block fieldset{
+    padding-left: 40px; 
+    padding-right: 40px; 
+    background: #e74c3c;
+}
+.search-submit{
+    float: right;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 10px;
+    background-image: url(../img/lupe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+.search-submit:hover{
+    background-color: #a3382c;
+}
+.price-list{
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: white;
+}
+.price-name{
+    margin-left: -15px;
+    color: #e74c3c;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 20px;
+}
+/* .contacts, .price-list{
+    width: 280px;
+} */
+.price-list-content a{
+    color: #3498db;
+}
+.price-list-content{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.slider-block{
+    margin-top: 15px;
+    width: 910px;
+    display: flex;
+    overflow: hidden;
+}
+.s1{
+    background-color: red;
+}
+.s2{
+    background-color: blue;
+}
+.s3{
+    background-color: green;
+}
+.overflow{
+    margin-bottom: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.vk{
+    width: 261px;
+    margin-top: 14px;
+}
+.s1, .s2, .s3{
+    width: 910px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+.desc{
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 120%;
+    color: #202730;
+}
+.col-lg-12 {
+    padding: 0;
+}
+
+
+@media (max-width: 768px) {
+    .search{
+        margin-top: 0;
+    }
+    .overflow{
+        margin-top: 0;
+    }
+    .block .col-xs-9{
+        padding: 0;
+    }
+    .block .col-xs-12{
+        padding: 0;
+    }
+    .bucket-img{
+        padding-right: 15px;
+    }
+    .bucket-box{
+        margin-top: 20px;
+    }
+    .header .col-sm-4 {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .price-list{
+        margin-top: 0;
+    }
+    
+  }
+@media (min-width: 768px) {
+    .search{
+        margin-top: 10px;
+    }
+    .overflow{
+        margin-top: 15px;
+    }
+    .block .col-sm-9{
+        padding: 0;
+    }
+    .bucket-img{
+        padding-right: 0;
+    }
+    .bucket-box{
+        margin-top: 0;
+    }
+    .header .col-sm-4 {
+        padding: 0;
+    }
+    .price-list{
+        margin-top: 10px;
+        padding: 16px 30px;
+    }
+    .price-list-content{
+        font-size: 14px;
+    }
+    .price-name{
+        font-size: 12px;
+    }
+    .logo img{
+        
+        width: 100px;
+    }
+    .contacts::first-line{
+        font-size: 18px;
+    }
+    .bucket-text{
+        font-size: 14px;
+    }
+    .slogan{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .item {
+      font-size: 8px;
+    }
+  }
+  /* на md */
+  @media (min-width: 992px) {
+    .search{
+        margin-top: 10px;
+    }
+    .overflow{
+        margin-top: 15px;
+    }
+    .block .col-md-9{
+        padding: 0;
+    }
+    .bucket-img{
+        padding-right: 15px;
+    }
+    .bucket-box{
+        margin-top: 0;
+    }
+    .header .col-md-4 {
+        padding: 0;
+    }
+    .price-list{
+        margin-top: 10px;
+        padding: 23px 30px;
+    }
+    .price-list-content{
+        font-size: 16px;
+    }
+    .price-name{
+        font-size: 14px;
+    }
+    .logo img{
+        width: 129px;
+    }
+    .contacts::first-line{
+        font-size: 24px;
+    }
+    .bucket-text{
+        font-size: 16px;
+    }
+    .slogan{
+        margin-top: 0;
+        font-size: 21px;
+    }
+    .item {
+      font-size: 13px;
+    }
+  }
+  /* на lg */
+  @media (min-width: 1200px) {
+    .search{
+        margin-top: 10px;
+    }
+    .overflow{
+        margin-top: 15px;
+    }
+    .block .col-lg-9{
+        padding: 0;
+    }
+    .bucket-img{
+        padding-right: 15px;
+    }
+    .bucket-box{
+        margin-top: 0;
+    }
+    .header .col-lg-4 {
+        padding: 0;
+    }
+    .price-list{
+        margin-top: 10px;
+        padding: 20px 30px;
+    }
+    .price-list-content{
+        font-size: 18px;
+    }
+    .price-name{
+        font-size: 14px;
+    }
+    .logo img{
+        width: 129px;
+    }
+    .contacts::first-line{
+        font-size: 24px;
+    }
+    .bucket-text{
+        font-size: 16px;
+    }
+    .slogan{
+        margin-top: 0;
+        font-size: 24px;
+    }
+    .item {
+      font-size: 15px;
+    }
+  }
+  
