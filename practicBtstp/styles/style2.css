@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-  
+body{
+    min-width: 320px;
 }
 .header{
     margin-top: 25px;
-   
 }
 .logo{
     cursor: pointer;
@@ -20,10 +19,6 @@
     font-size: 24px;
     color: #2c3e50;
     line-height: 100%;
-}
-
-.bucket-box{
-
 }
 .bucket-text{
     border: 1px solid #ecf0f1;
@@ -52,6 +47,8 @@
     color: #3498db;
 }
 .navbar-header{
+    z-index: 999;
+    position: fixed;
     display: flex;
     justify-content: center;
     background: #2980b9;
@@ -194,9 +191,6 @@ input:focus::placeholder{
     font-weight: 900;
     line-height: 20px;
 }
-/* .contacts, .price-list{
-    width: 280px;
-} */
 .price-list-content a{
     color: #3498db;
 }
@@ -242,10 +236,6 @@ input:focus::placeholder{
 .col-lg-12 {
     padding: 0;
 }
-
-.navmenu{
-  
-}
 .navbar-toggle {
     display: flex;
     position: relative;
@@ -254,7 +244,7 @@ input:focus::placeholder{
     margin-bottom: 8px;
     background-color: transparent;
     background-image: none;
-    width: 100vw;
+    width: 95vw;
     border: none;
     border-radius: 4px;
     flex-direction: column;
@@ -271,7 +261,7 @@ input:focus::placeholder{
     font-weight: bold;
     margin-bottom: 10px;
 }
-.items.col-lg-3.col-md-3.col-sm-3.col-xs-6 {
+.items.col-lg-3.col-md-3.col-sm-4.col-xs-6 {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -303,9 +293,6 @@ input:focus::placeholder{
     align-items: center;
     justify-content: center;
     background: #3498db;
-    width: 120px;
-    height: 50px;
-    font-size: 16px;
     font-weight: 700;
     color: white;
     border-radius: 5px;
@@ -338,7 +325,76 @@ input:focus::placeholder{
     margin-right: auto;
     margin-left: 10px;
 }
+.catalog-elem{
+    display: flex;
+    height: 267px;
+    background: #fff;
+    border: 1px solid #c2e9f2;
+    color: #2c3e50;
+    justify-content: center;
+    border: 3px solid transparent;
+}
+.catalog-elem:hover{
+    border: 3px solid #fda298;
+}
+.catalog-img{
+    width: auto;
+    height: auto;
+}
+.catalog-elem a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog{
+    margin-bottom: 10px;
+}
+.catalog.col-lg-3.col-md-3.col-sm-4.col-xs-6.col-xxs-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.basement{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2c3e50;
+    
+}
+.basement-text{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: white;
+}
+.basement-text a{
+    color: white;
+}
+@media (min-width: 400px){
+    .basement-text{
+        font-size: 10px;
+    }
+    .basement{
+        height: 120px;
+    }   
+    .main-title{
+        font-size: 24px;
+    }
+}
 @media (max-width: 768px) {
+    .basement-text{
+        font-size: 12px;
+    }
+    .basement{
+        height: 120px;
+    }
+    .main-title{
+        font-size: 24px;
+    }
+    .slider-body{
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
     .item-cor{
         height: 480px;
     }
@@ -355,9 +411,6 @@ input:focus::placeholder{
     }
     .contacts::first-line {
         font-size: 15px;
-    }
-    .navbar-collapse{
-        
     }
     ul{
         display: flex;
@@ -392,9 +445,22 @@ input:focus::placeholder{
     .price-list{
         margin-top: 0;
     }
-    
   }
 @media (min-width: 768px) {
+    .basement-text{
+        font-size: 14px;
+    }
+    .basement{
+        height: 140px;
+    }
+    .main-title{
+        font-size: 24px;
+    }
+    .slider-body{
+        width: 97px;
+        height: 40px;
+        font-size: 14px;
+    }
     .item-cor{
         height: 300px;
     }
@@ -445,7 +511,6 @@ input:focus::placeholder{
         font-size: 12px;
     }
     .logo img{
-        
         width: 100px;
     }
     .contacts::first-line{
@@ -462,8 +527,21 @@ input:focus::placeholder{
       font-size: 8px;
     }
   }
-  /* на md */
   @media (min-width: 992px) {
+    .basement-text{
+        font-size: 14px;
+    }
+    .basement{
+        height: 140px;
+    }
+    .main-title{
+        font-size: 24px;
+    }
+    .slider-body{
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
     .item-cor{
         height: 350px;
     }
@@ -530,8 +608,16 @@ input:focus::placeholder{
       font-size: 10px;
     }
   }
-  /* на lg */
   @media (min-width: 1200px) {
+    .basement-text{
+        font-size: 14px;
+    }
+    .basement{
+        height: 140px;
+    }
+    .main-title{
+        font-size: 24px;
+    }
     .item-cor{
         height: 380px;
     }
@@ -606,4 +692,3 @@ input:focus::placeholder{
       font-size: 12px;
     }
   }
-  
