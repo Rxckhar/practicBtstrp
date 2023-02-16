@@ -4,31 +4,36 @@ let nextBtn = document.querySelector(".next"),
     s1 = document.querySelector(".s1"),
     s2 = document.querySelector(".s2"),
     s3 = document.querySelector(".s3"),
-    dots = document.querySelectorAll(".dot");
+    dots = document.querySelectorAll(".dot"),
+    menuBtn = document.querySelector(".fixed"),
+    menu = document.querySelector(".mobile-menu");
+    
+let menuVisble = 0,
+    menuBool = false,
+    menuTranslate = 0;
+
     
 
-
+menuBtn.addEventListener("click", function(){
+    menuVisble++;
     
-
+    menu.style.transform = `translateX(${menuTranslate}px)`;
     
-// $(document).ready(function(){
-//     const slider = $("#slider").owlCarousel({
-//         loop: true,
-//         mouseDrag: true,
-//         dots: true,
-//         nav: true,
-//         dotsEach: true,
-//         navText: [
-//             '<div class="nav-back"><</div>',
-//             '<div class="nav-next">></div>'
-//         ],
-//         responsive:{
-//             1:{
-//                 items:4
-//             }
-//         }
-//     });
-// });
+    switch(menuVisble){
+        case 1:  
+        menuTranslate = -1000; 
+        console.log(menuVisble);
+        break;
+        case 2:  
+        menuTranslate = 0;
+        menuVisble = 0;
+        console.log(menuVisble);
+        break;
+    }
+});
+
+
+
 $(document).ready(function(){
     const slider = $("#slider-first").owlCarousel({
         loop: true,

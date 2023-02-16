@@ -424,10 +424,6 @@ input:focus::placeholder{
     height: 1px;
     border-top: 1px solid #c2e9f2;;
 }
-.text-align{
-    display: flex;
-    flex-direction: column;
-}
 .border-disp{
     width: 150%;
     display: flex;
@@ -435,6 +431,10 @@ input:focus::placeholder{
     margin-top: 20px;
     margin-bottom: 15px;
     margin-left: 60px;
+}
+.text-align{
+    display: flex;
+    flex-direction: column;
 }
 .last-title{
     margin-top: 35px;
