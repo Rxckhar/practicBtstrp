@@ -22,12 +22,10 @@ menuBtn.addEventListener("click", function(){
     switch(menuVisble){
         case 1:  
         menuTranslate = -1000; 
-        console.log(menuVisble);
         break;
         case 2:  
         menuTranslate = 0;
         menuVisble = 0;
-        console.log(menuVisble);
         break;
     }
 });
